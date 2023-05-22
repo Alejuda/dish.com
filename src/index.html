@@ -7,6 +7,44 @@
     <title>Dishes</title>
   </head>
   <body>
-    <h1>Hello!</h1>
+    <div class="pop-up-container" id="popup-window">
+      <section class="pop-up" id="pop-up">
+        <img class="dish-img" id="dish-img" alt="dish image" />
+        <img src="./close.svg" alt="CLOSE" class="close-btn" id="close-btn" />
+        <h2 class="dish-title" id="dish-title"></h2>
+        <div class="category-container">
+          <h3 class="category" id="dish-area"></h3>
+          <h3 class="category" id="dish-category"></h3>
+        </div>
+        <div class="dish-tags" id="dish-tags"></div>
+        <p class="see-recipe">
+          <i>You can see the complete recipe <a id="recipe-link">here</a>.</i>
+        </p>
+        <h3 class="popup-header">Comments (3)</h3>
+        <article class="comments-container">
+          <p class="comment-description">03/12/2021 Mia: I love.</p>
+        </article>
+        <h3 class="popup-header">Add a comment</h3>
+        <form class="commit-form">
+          <input
+            type="text"
+            class="name-input input-control"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <textarea
+            class="commit-input input-control"
+            name="commit"
+            id="commit"
+            placeholder="Your insights"
+          ></textarea>
+          <button type="submit" class="add-comment-btn" id="comment-btn">
+            Comment
+          </button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
