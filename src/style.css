@@ -1,104 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-      background-color: beige;
-  }
-  
-  .pop-up-container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    place-content: center;
-    padding: 20px;
-  }
-  
-  .pop-up {
-    position: relative;
-    width: 70%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 6px;
-    border: 2px solid black;
-    gap: 10px;
-    padding: 30px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin: auto;
-  }
-  
-  .dish-img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+.pop-up-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  place-content: center;
+  padding: 20px;
+}
+
+.pop-up {
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid black;
+  gap: 10px;
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.dish-img {
   width: 400px;
   height: 200px;
-    overflow: hidden;
-    object-fit: cover;
-    border-radius: 5px;
-  }
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+}
 
-  .close-btn {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-  
-  .category-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-  }
-  
-  .dish-tags {
-      padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .tag-description {
-    padding: 5px 10px;
-    background-color: rgba(165, 165, 165, 0.493);
-    border-radius: 4px;
-    border: 1px solid white;
-  }
-  
-  .commit-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 6px;
-      align-items: stretch;
-  }
-  
-  .input-control {
-      background-color: transparent;
-      border: 2px solid black;
-      padding: 5px 10px;
-      border-radius: 4px;
-  }
-  
-  .input-control::placeholder {
-      color: black;
-  }
-  
-  .commit-input {
-      resize: none;
-      height: 60px;
-  }
-  
-  .add-comment-btn {
-      border-radius: 4px;
-      background-color: transparent;
-      border: 2px solid black;
-      padding: 5px 10px;
-  }
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.category-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.dish-tags {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tag-description {
+  padding: 5px 10px;
+  background-color: rgba(165, 165, 165, 0.493);
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+.commit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  align-items: stretch;
+}
+
+.input-control {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.input-control::placeholder {
+  color: black;
+}
+
+.commit-input {
+  resize: none;
+  height: 60px;
+}
+
+.add-comment-btn {
+  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
