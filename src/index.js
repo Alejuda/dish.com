@@ -37,3 +37,4 @@ window.addEventListener('DOMContentLoaded', () => {
       getMyData();
     });
 });
+import './style.css';
