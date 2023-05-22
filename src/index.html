@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dishes</title>
-  </head>
-  <body>
-    <h1>Hello!</h1>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+      
+        <ul class="navBar">
+            <li class="list">List</li>
+            <li class="search">Search</li>
+            <li class="contact">Contact</li>
+        </ul>
+    </header>
+    <hr>
+    <form action="">
+        <label for="Catogary">Search by:</label>
+        <select name="Catogary" id="catogary">
+            <option value="c">Catogary</option>
+            <option value="a">Area</option>
+            <option value="i">Ingredients</option>
+
+
+        </select>
+        <select name="typeOrArea" id="typeOrArea">
+
+        </select>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    <div class="displayDiv">
+
+    </div>
+   <hr class="footerLine">
+    <footer class="footer"></footer>
+    <script src="index.js"></script>
+</body>
+
 </html>
