@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dish.com</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dishes</title>
+  </head>
+  <body>
     <header class="header">
-      
-        <ul class="navBar">
-            <li class="list">List</li>
-            <li class="search">Search</li>
-            <li class="contact">Contact</li>
-        </ul>
+      <ul class="navBar">
+        <li class="list">List</li>
+        <li class="search">Search</li>
+        <li class="contact">Contact</li>
+      </ul>
     </header>
-    <hr>
+    <hr />
     <form action="">
-        <label for="Catogary">Search by:</label>
-        <select name="Catogary" id="catogary">
-            <option value="c">Catogary</option>
-            <option value="a">Area</option>
-            <option value="i">Ingredients</option>
-
-
-        </select>
-        <select name="typeOrArea" id="typeOrArea">
-
-        </select>
-        <button type="submit" class="submit">Submit</button>
+      <label for="Catogary">Search by:</label>
+      <select name="Catogary" id="catogary">
+        <option value="c">Catogary</option>
+        <option value="a">Area</option>
+        <option value="i">Ingredients</option>
+      </select>
+      <select name="typeOrArea" id="typeOrArea"></select>
+      <button type="submit" class="submit">Submit</button>
     </form>
-    <div class="displayDiv">
-
+    <div class="pop-up-container" id="popup-window">
+      <section class="pop-up" id="pop-up">
+        <img class="dish-img" id="dish-img" alt="dish image" />
+        <img alt="CLOSE" class="close-btn" id="close-btn" />
+        <h2 class="dish-title" id="dish-title"></h2>
+        <div class="category-container">
+          <h3 class="category" id="dish-area"></h3>
+          <h3 class="category" id="dish-category"></h3>
+        </div>
+        <div class="dish-tags" id="dish-tags"></div>
+        <p class="see-recipe">
+          <i>You can see the complete recipe <a id="recipe-link">here</a>.</i>
+        </p>
+        <h3 class="popup-header">Comments (3)</h3>
+        <article class="comments-container">
+          <p class="comment-description">03/12/2021 Mia: I love.</p>
+        </article>
+        <h3 class="popup-header">Add a comment</h3>
+        <form class="commit-form">
+          <input
+            type="text"
+            class="name-input input-control"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <textarea
+            class="commit-input input-control"
+            name="commit"
+            id="commit"
+            placeholder="Your insights"
+          ></textarea>
+          <button type="submit" class="add-comment-btn" id="comment-btn">
+            Comment
+          </button>
+        </form>
+      </section>
     </div>
-   <hr class="footerLine">
+    <div class="displayDiv"></div>
+    <hr class="footerLine" />
     <footer class="footer"></footer>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

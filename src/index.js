@@ -1,12 +1,17 @@
 import './style.css';
 import logo from './assets/logo.png';
 import { selectedDrop, getMyData } from './modules/renderElements.js';
+import showPopup from './modules/showPopup.js';
+import closePopup from './modules/closePopup.js';
+import closeImg from './close.svg';
 
 const submit = document.querySelector('.submit');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
+const closePopupImg = document.getElementById('close-btn');
+
 const renderLogo = () => {
   const myLogo = new Image();
   myLogo.src = logo;
@@ -29,6 +34,7 @@ submit.addEventListener('click', (e) => {
   e.preventDefault();
   getMyData();
 });
+
 window.addEventListener('DOMContentLoaded', () => {
   renderLogo();
   fillFooter();
@@ -37,4 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
       getMyData();
     });
 });
-import './style.css';
+
+closePopupImg.src = closeImg;
+closePopupImg.addEventListener('click', () => closePopup());
+
+window.showPopup = showPopup;
