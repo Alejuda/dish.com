@@ -151,6 +151,9 @@ select {
   display: none;
   place-content: center;
   padding: 20px;
+  top: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(165, 165, 165, 0.301);
 }
 
 .pop-up {
@@ -218,13 +221,13 @@ select {
 
 .input-control {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
 .input-control::placeholder {
-  color: black;
+  color: white;
 }
 
 .commit-input {
@@ -235,6 +238,7 @@ select {
 .add-comment-btn {
   border-radius: 4px;
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
+  color: white;
   padding: 5px 10px;
 }
