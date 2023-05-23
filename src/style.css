@@ -238,3 +238,12 @@ select {
   border: 2px solid black;
   padding: 5px 10px;
 }
+
+.comment {
+  background-color: skyblue;
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+}
