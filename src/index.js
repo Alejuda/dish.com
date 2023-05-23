@@ -7,6 +7,7 @@ import closeImg from './close.svg';
 import postCommit from './modules/postCommit.js';
 import fetchCommmits from './modules/fetchCommits.js';
 import commentCounter from './modules/commentCounter.js';
+import postLike from './modules/likes.js';
 
 const submit = document.querySelector('.submit');
 const header = document.querySelector('.header');
@@ -71,3 +72,4 @@ postForm.addEventListener('submit', async (e) => {
   const numberOfComments = await commentCounter(window.popupElementd);
   commentsNumber.innerText = numberOfComments;
 });
+window.postLike = postLike;
