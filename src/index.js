@@ -4,6 +4,7 @@ import { selectedDrop, getMyData } from './modules/renderElements.js';
 import showPopup from './modules/showPopup.js';
 import closePopup from './modules/closePopup.js';
 import closeImg from './close.svg';
+import postLike from './modules/likes.js';
 
 const submit = document.querySelector('.submit');
 const header = document.querySelector('.header');
@@ -48,3 +49,4 @@ closePopupImg.src = closeImg;
 closePopupImg.addEventListener('click', () => closePopup());
 
 window.showPopup = showPopup;
+window.postLike = postLike;

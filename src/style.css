@@ -120,11 +120,11 @@ select {
 
 .mealName {
   background-color: skyblue;
-  margin-top: 20px;
   border-radius: 5px;
   padding: 1px 3px 1px 3px;
   width: 200px;
   text-align: center;
+  margin-top: -15px;
 }
 
 .footerLine {
@@ -246,4 +246,24 @@ select {
   height: 40px;
   font-size: 18px;
   border-radius: 5px;
+  margin-left: -10px;
+}
+
+.fa-heart {
+  color: white;
+}
+
+.like {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  position: relative;
+  left: 70px;
+  top: -38px;
+  cursor: pointer;
+}
+
+.elementLikes {
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
