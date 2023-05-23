@@ -1,7 +1,9 @@
 import showCommits from './fetchCommits.js';
 
 const showPopup = async (mealId) => {
-  const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
+  const response = await fetch(
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`,
+  );
   const jsonData = await response.json();
   const foodName = jsonData.meals[0].strMeal;
   const foodCategory = jsonData.meals[0].strCategory;
@@ -34,8 +36,8 @@ const showPopup = async (mealId) => {
   dishCategory.innerText = `Category: ${foodCategory}`;
   dishTagsElement.innerHTML = tagsHtml;
   recipeLink.setAttribute('href', linkToRecipe);
-
   popUp.style.display = 'flex';
+  window.popupElementd = mealId;
 };
 
 export default showPopup;
