@@ -166,7 +166,7 @@ select {
   border-radius: 6px;
   border: 2px solid black;
   gap: 10px;
-  padding: 30px;
+  padding: 50px;
   overflow-x: hidden;
   overflow-y: auto;
   margin: auto;
@@ -209,6 +209,15 @@ select {
   background-color: rgba(165, 165, 165, 0.493);
   border-radius: 4px;
   border: 1px solid white;
+}
+
+.dish-title,
+.category,
+.see-recipe > i,
+.see-recipe > i > a,
+.popup-header,
+.comment-description {
+  color: white;
 }
 
 .commit-form {
