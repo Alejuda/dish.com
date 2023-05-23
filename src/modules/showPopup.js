@@ -1,6 +1,8 @@
 import showCommits from './fetchCommits.js';
+import commentCounter from './commentCounter.js';
 
 const showPopup = async (mealId) => {
+  window.popupElementd = mealId;
   const response = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`,
   );
@@ -20,6 +22,10 @@ const showPopup = async (mealId) => {
   const dishCategory = document.getElementById('dish-category');
   const dishTagsElement = document.getElementById('dish-tags');
   const recipeLink = document.getElementById('recipe-link');
+  const commentsNumber = document.getElementById('comments-number');
+  const numberOfComments = await commentCounter(window.popupElementd);
+
+  commentsNumber.innerText = numberOfComments;
 
   let tagsHtml = '';
   if (dishTags !== null) {
@@ -37,7 +43,6 @@ const showPopup = async (mealId) => {
   dishTagsElement.innerHTML = tagsHtml;
   recipeLink.setAttribute('href', linkToRecipe);
   popUp.style.display = 'flex';
-  window.popupElementd = mealId;
 };
 
 export default showPopup;

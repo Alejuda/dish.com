@@ -6,6 +6,7 @@ import closePopup from './modules/closePopup.js';
 import closeImg from './close.svg';
 import postCommit from './modules/postCommit.js';
 import fetchCommmits from './modules/fetchCommits.js';
+import commentCounter from './modules/commentCounter.js';
 
 const submit = document.querySelector('.submit');
 const header = document.querySelector('.header');
@@ -13,6 +14,7 @@ const footer = document.querySelector('.footer');
 const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
 const closePopupImg = document.getElementById('close-btn');
+const commentsNumber = document.getElementById('comments-number');
 
 const renderLogo = () => {
   const myLogo = new Image();
@@ -66,4 +68,6 @@ postForm.addEventListener('submit', async (e) => {
   commitContainer.innerHTML = newCommits;
   nameInput.value = '';
   commentInput.value = '';
+  const numberOfComments = await commentCounter(window.popupElementd);
+  commentsNumber.innerText = numberOfComments;
 });
