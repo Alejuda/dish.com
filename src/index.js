@@ -69,5 +69,5 @@ postForm.addEventListener('submit', async (e) => {
   nameInput.value = '';
   commentInput.value = '';
   const numberOfComments = await commentCounter(window.popupElementd);
-  commentsNumber.innerText = numberOfComments
+  commentsNumber.innerText = numberOfComments;
 });
