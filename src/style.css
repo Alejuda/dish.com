@@ -230,6 +230,7 @@ select {
 
 .input-control {
   background-color: transparent;
+  color: white;
   border: 2px solid white;
   padding: 5px 10px;
   border-radius: 4px;
@@ -259,4 +260,8 @@ select {
   height: 40px;
   font-size: 18px;
   border-radius: 5px;
+}
+
+#comments-number {
+  color: white;
 }
