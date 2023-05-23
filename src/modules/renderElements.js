@@ -1,4 +1,5 @@
 import like from '../assets/like.png';
+import countItems from './itemsCounter.js';
 const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
 const displayDiv = document.querySelector('.displayDiv');
@@ -76,5 +77,7 @@ export const getMyData = async () => {
         container.append(mealName);
         displayDiv.append(container);
       });
-    });
+    })
+    .then(() => {countItems()})
+    
 };

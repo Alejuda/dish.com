@@ -20,6 +20,12 @@
   border-bottom: 1.5px solid white;
 }
 
+.itemsCounter {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 hr {
   margin-top: 5px;
   height: 1.5px;
