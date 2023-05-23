@@ -1,4 +1,4 @@
-import showCommits from './fetchCommits.js'
+import showCommits from './fetchCommits.js';
 
 const showPopup = async (mealId) => {
   const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
@@ -10,7 +10,7 @@ const showPopup = async (mealId) => {
   const imgSrc = jsonData.meals[0].strMealThumb;
   const linkToRecipe = jsonData.meals[0].strSource;
 
-  const commitContainer = document.getElementById('commits-container')
+  const commitContainer = document.getElementById('commits-container');
   const popUp = document.getElementById('popup-window');
   const dishImg = document.getElementById('dish-img');
   const dishTitle = document.getElementById('dish-title');
