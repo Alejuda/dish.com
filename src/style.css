@@ -153,7 +153,7 @@ select {
   padding: 20px;
   top: 0;
   backdrop-filter: blur(3px);
-  background-color: rgba(165, 165, 165, 0.301);
+  background-color: rgba(165, 165, 165, 0.342);
 }
 
 .pop-up {
