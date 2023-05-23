@@ -151,6 +151,9 @@ select {
   display: none;
   place-content: center;
   padding: 20px;
+  top: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(165, 165, 165, 0.342);
 }
 
 .pop-up {
@@ -163,7 +166,7 @@ select {
   border-radius: 6px;
   border: 2px solid black;
   gap: 10px;
-  padding: 30px;
+  padding: 50px;
   overflow-x: hidden;
   overflow-y: auto;
   margin: auto;
@@ -208,6 +211,15 @@ select {
   border: 1px solid white;
 }
 
+.dish-title,
+.category,
+.see-recipe > i,
+.see-recipe > i > a,
+.popup-header,
+.comment-description {
+  color: white;
+}
+
 .commit-form {
   display: flex;
   flex-direction: column;
@@ -218,13 +230,13 @@ select {
 
 .input-control {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
 .input-control::placeholder {
-  color: black;
+  color: white;
 }
 
 .commit-input {
@@ -235,7 +247,8 @@ select {
 .add-comment-btn {
   border-radius: 4px;
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
+  color: white;
   padding: 5px 10px;
 }
 
