@@ -1,8 +1,8 @@
-import {fetchData} from './__mocks__/commentCounter.js'
+import fetchData from './__mocks__/commentCounter.js';
 
-const commentCounter = (mealId) => {
-    const jsonData = fetchData();
-    return jsonData.length;
-  };
-  
-  export default commentCounter;
+const commentCounter = () => {
+  const jsonData = fetchData();
+  return jsonData.length;
+};
+
+export default commentCounter;

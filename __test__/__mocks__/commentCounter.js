@@ -1,3 +1,2 @@
-export const fetchData = () => {
-    return [{},{},{}]
-}
+const fetchData = () => [{}, {}, {}];
+export default fetchData;
