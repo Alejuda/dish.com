@@ -1,4 +1,4 @@
-import like from '../assets/like.png';
+import like from '../assets/like.svg';
 import countItems from './itemsCounter.js';
 const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
@@ -52,6 +52,7 @@ export const getMyData = async () => {
         mealName.className = 'mealName';
         mealName.append(document.createTextNode(meal.strMeal));
         container.append(maelDiv);
+        container.append(mealName);
         container.innerHTML += `<button type = "button" data-id = ${meal.idMeal} onclick = "showPopup(${meal.idMeal})" class="comment">comment</button>`;
         container.innerHTML += `<img src=${like} data-id = ${meal.idMeal} class="like" onclick="postLike(${meal.idMeal})">`;
         const element = document.createElement('p');
@@ -74,7 +75,6 @@ export const getMyData = async () => {
           });
 
         container.appendChild(element);
-        container.append(mealName);
         displayDiv.append(container);
       });
     })

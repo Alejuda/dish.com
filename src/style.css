@@ -4,9 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Shantell Sans', cursive;
-  background-color: black;
-  color: red;
+  font-family: system-ui, sans-serif;
+  background-color: #2D2E32;
+  color: white;
 }
 
 .header {
@@ -45,16 +45,22 @@ hr {
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  color: red;
   font-size: 22px;
-  background-color: black;
+  background-color: #2D2E32;
+}
+
+.list,
+.contact, 
+.search {
+  border-bottom: 2px solid transparent;
+  transition: all 200ms;
 }
 
 .list:hover,
 .search:hover,
 .contact:hover {
-  background-color: white;
   cursor: pointer;
+  border-bottom: 2px solid white;
 }
 
 form {
@@ -64,26 +70,34 @@ form {
 
 option,
 select {
-  background-color: white;
+  background-color: transparent;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 2px solid white;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 select {
   margin-left: 10px;
 }
 
-#typeOrArea {
-  width: 70px;
+option {
+  background-color: #2D2E32;
+  padding: 5px;
 }
 
 .submit {
-  background-color: white;
+  background-color: transparent;
   margin-left: 10px;
-  width: 70px;
   border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  font-size: 15px;
 }
 
 .submit:hover {
-  background-color: black;
+  background-color: #2D2E32;
   cursor: pointer;
   border: 1.5px solid white;
 }
@@ -95,7 +109,7 @@ select {
   padding-top: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 40px;
   padding-bottom: 30px;
 }
@@ -109,13 +123,14 @@ select {
 .meal {
   width: 280px;
   height: 280px;
-  background-color: skyblue;
-  border-radius: 90%;
+  background-color: rgba(170, 170, 170, 0.267);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   column-gap: 15px;
+  border: 1px solid white;
 }
 
 .mealPhoto {
@@ -125,12 +140,14 @@ select {
 }
 
 .mealName {
-  background-color: skyblue;
+  /* background-color: rgba(170, 170, 170, 0.267); */
   border-radius: 5px;
-  padding: 1px 3px 1px 3px;
-  width: 200px;
+  padding: 5px 20px;
+  max-width: 300px;
   text-align: center;
-  margin-top: -15px;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .footerLine {
@@ -171,7 +188,7 @@ select {
   flex-direction: column;
   align-items: center;
   border-radius: 6px;
-  border: 2px solid black;
+  border: 2px solid white;
   gap: 10px;
   padding: 50px;
   overflow-x: hidden;
@@ -187,10 +204,19 @@ select {
   border-radius: 5px;
 }
 
+.dish-title {
+  font-size: 28px;
+}
+
 .close-btn {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
+  transform: scale(1.5);
+}
+
+.close-btn:hover {
+  cursor: pointer;
 }
 
 .category-container {
@@ -200,6 +226,7 @@ select {
   justify-content: center;
   gap: 50px;
   align-items: center;
+  font-size: 20px
 }
 
 .dish-tags {
@@ -227,20 +254,45 @@ select {
   color: white;
 }
 
+.popup-header {
+  font-size: 22px;
+}
+
+.see-recipe > i,
+.see-recipe > i > a {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.comments-container {
+  background-color: rgba(165, 165, 165, 0.293);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment-description {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .commit-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6px;
+  gap: 10px;
   align-items: stretch;
+  width: 80%;
+  max-width: 500px;
 }
 
 .input-control {
   background-color: transparent;
   color: white;
   border: 2px solid white;
-  padding: 5px 10px;
+  padding: 7px 15px;
   border-radius: 4px;
+  font-size: 18px;
 }
 
 .input-control::placeholder {
@@ -253,6 +305,7 @@ select {
 }
 
 .add-comment-btn {
+  font-size: 18px;
   border-radius: 4px;
   background-color: transparent;
   border: 2px solid white;
@@ -260,24 +313,31 @@ select {
   padding: 5px 10px;
 }
 
+.add-comment-btn:hover {
+  background-color: rgba(170, 170, 170, 0.17);
+}
+
 .comment {
-  background-color: skyblue;
+  background-color: rgba(170, 170, 170, 0.267);
   margin-top: 15px;
-  width: 100px;
-  height: 40px;
-  font-size: 18px;
+  padding: 5px 7px;
+  font-size: 20px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.comment:hover {
+  background-color: rgba(170, 170, 170, 0.17);
 }
 
 #comments-number {
   color: white;
 }
 
-.fa-heart {
-  color: white;
-}
-
 .like {
+  margin-left: 10px;
   width: 35px;
   height: 35px;
   border-radius: 10px;
@@ -287,7 +347,13 @@ select {
   cursor: pointer;
 }
 
+.like:hover {
+  transform: scale(1.1);
+}
+
 .elementLikes {
   margin-top: -30px;
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
