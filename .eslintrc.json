@@ -21,6 +21,7 @@
     "ignorePatterns": [
       "dist/",
       "build/",
+      "search.js",
       "renderElements.js"
     ]
   }

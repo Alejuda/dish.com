@@ -8,6 +8,7 @@ import postCommit from './modules/postCommit.js';
 import fetchCommmits from './modules/fetchCommits.js';
 import commentCounter from './modules/commentCounter.js';
 import postLike from './modules/likes.js';
+import search from './modules/search.js';
 
 const submit = document.querySelector('.submit');
 const header = document.querySelector('.header');
@@ -16,6 +17,34 @@ const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
 const closePopupImg = document.getElementById('close-btn');
 const commentsNumber = document.getElementById('comments-number');
+const searchBtn = document.getElementById('search-btn');
+const listSection = document.querySelector('.list-sec');
+const searchSection = document.querySelector('.search-sec');
+const listButton = document.querySelector('.list');
+const searchButton = document.querySelector('.search');
+const footerLine = document.querySelector('.footerLine');
+
+const showList = () => {
+  listSection.style.display = 'block';
+  searchSection.style.display = 'none';
+  footer.classList.remove('margin');
+  footerLine.classList.remove('margin-top');
+};
+
+const showSeacrch = () => {
+  listSection.style.display = 'none';
+  searchSection.style.display = 'block';
+  footer.classList.add('margin');
+  footerLine.classList.add('margin-top');
+};
+
+listButton.addEventListener('click', () => {
+  showList();
+});
+
+searchButton.addEventListener('click', () => {
+  showSeacrch();
+});
 
 const renderLogo = () => {
   const myLogo = new Image();
@@ -44,12 +73,17 @@ submit.addEventListener('click', (e) => {
   getMyData();
 });
 
+searchBtn.addEventListener('click', () => {
+  search();
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   renderLogo();
   fillFooter();
   selectedDrop('c').then(() => {
     getMyData();
   });
+  showList();
 });
 
 closePopupImg.src = closeImg;

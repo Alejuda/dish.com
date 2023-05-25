@@ -1,15 +1,15 @@
 import like from '../assets/like.svg';
 import countItems from './itemsCounter.js';
+
 const catogray = document.getElementById('catogary');
 const typeOrArea = document.getElementById('typeOrArea');
 const displayDiv = document.querySelector('.displayDiv');
-
 
 export const selectedDrop = async (selected) => {
   await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?${selected}=list`)
     .then((response) => response.json())
     .then((data) => {
-      const meals = data.meals;
+      const { meals } = data;
 
       meals.forEach((element) => {
         if (typeOrArea.children.length < 28) {
@@ -37,7 +37,6 @@ export const getMyData = async () => {
 
       displayDiv.innerHTML = '';
       meals.forEach((meal) => {
-
         const container = document.createElement('div');
         container.className = 'container';
         container.setAttribute('data-id', meal.idMeal);
@@ -56,11 +55,11 @@ export const getMyData = async () => {
         container.innerHTML += `<button type = "button" data-id = ${meal.idMeal} onclick = "showPopup(${meal.idMeal})" class="comment">comment</button>`;
         container.innerHTML += `<img src=${like} data-id = ${meal.idMeal} class="like" onclick="postLike(${meal.idMeal})">`;
         const element = document.createElement('p');
-        element.className = "elementLikes";
+        element.className = 'elementLikes';
         element.setAttribute('id', meal.idMeal);
 
         element.append(document.createTextNode('0 likes'));
-       
+
         fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/o5YLWfucVuUSY3jbCcrI/likes/', {
           method: 'GET',
         })
@@ -68,8 +67,7 @@ export const getMyData = async () => {
           .then((data) => {
             for (let i = 0; i < data.length; i += 1) {
               if (data[i].item_id == element.getAttribute('id')) {
-                
-                element.innerHTML = `${data[i].likes} likes`
+                element.innerHTML = `${data[i].likes} likes`;
               }
             }
           });
@@ -78,6 +76,5 @@ export const getMyData = async () => {
         displayDiv.append(container);
       });
     })
-    .then(() => {countItems()})
-    
+    .then(() => { countItems(); });
 };

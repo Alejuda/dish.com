@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dishes</title>
-    
-  </head>
-  <body>
-    <header class="header">
-      <ul class="navBar">
-        <li class="list">List</li>
-        <li class="search">Search</li>
-        <li class="contact">Contact</li>
-      </ul>
-    </header>
-    <hr />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dishes</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <ul class="navBar">
+      <li class="list">List</li>
+      <li class="search">Search</li>
+      <li class="contact">Contact</li>
+    </ul>
+  </header>
+  <hr />
+  <section class="search-sec">
+    <div class="section-container">
+      <div class="search-container">
+        <input type="text" placeholder="Type A Dish Name Here.." id="user-inp" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </section>
+  <section class="list-sec">
     <form action="">
       <label for="Catogary">Search by:</label>
       <select name="Catogary" id="catogary">
@@ -45,20 +57,8 @@
         <article class="comments-container" id="commits-container"></article>
         <h3 class="popup-header">Add a comment</h3>
         <form class="commit-form" id="post-comment-form">
-          <input
-            type="text"
-            class="name-input input-control"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-          <textarea
-            class="commit-input input-control"
-            name="commit"
-            id="commit"
-            placeholder="Your insights"
-          ></textarea>
+          <input type="text" class="name-input input-control" id="name" name="name" placeholder="Your name" required />
+          <textarea class="commit-input input-control" name="commit" id="commit" placeholder="Your insights"></textarea>
           <button type="submit" class="add-comment-btn" id="comment-btn">
             Comment
           </button>
@@ -67,8 +67,12 @@
     </div>
     <p class="itemsCounter"></p>
     <div class="displayDiv"></div>
-    <hr class="footerLine" />
-    <footer class="footer"></footer>
-    <script src="index.js"></script>
-  </body>
+  </section>
+  
+  <hr class="footerLine" />
+  <footer class="footer"></footer>
+  
+  <script src="index.js"></script>
+</body>
+
 </html>
