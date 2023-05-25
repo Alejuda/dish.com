@@ -23,20 +23,38 @@ const searchSection = document.querySelector('.search-sec');
 const listButton = document.querySelector('.list');
 const searchButton = document.querySelector('.search');
 const footerLine = document.querySelector('.footerLine');
+const contactSec = document.querySelector('.contact-section');
+const contactButton = document.querySelector('.contact');
 
 const showList = () => {
   listSection.style.display = 'block';
   searchSection.style.display = 'none';
+  contactSec.style.display = 'none';
   footer.classList.remove('margin');
   footerLine.classList.remove('margin-top');
+  footer.classList.remove('contact-margin');
+  footerLine.classList.remove('contact-margin-top'); 
 };
 
 const showSeacrch = () => {
   listSection.style.display = 'none';
   searchSection.style.display = 'block';
+  contactSec.style.display = 'none';
   footer.classList.add('margin');
   footerLine.classList.add('margin-top');
+  footer.classList.remove('contact-margin');
+  footerLine.classList.remove('contact-margin-top'); 
 };
+
+const showContact = () => {
+  listSection.style.display = 'none';
+  searchSection.style.display = 'none';
+  contactSec.style.display = 'block';
+  footer.classList.add('contact-margin');
+  footerLine.classList.add('contact-margin-top'); 
+  footer.classList.remove('margin');
+  footerLine.classList.remove('margin-top');
+}
 
 listButton.addEventListener('click', () => {
   showList();
@@ -46,6 +64,9 @@ searchButton.addEventListener('click', () => {
   showSeacrch();
 });
 
+contactButton.addEventListener('click', () => {
+  showContact();
+})
 const renderLogo = () => {
   const myLogo = new Image();
   myLogo.src = logo;
