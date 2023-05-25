@@ -126,9 +126,9 @@ npm run test
 
 👤 **Ahmed Elkholy**
 
-- GitHub: [@Ahmed Elkholy](https://github.com/ahmed025566)
-- Twitter: [@Ahmed Elkholy](https://twitter.com/)
-- LinkedIn: [Ahmed Elkholy](https://www.linkedin.com/)
+- GitHub: [@ahmed](https://github.com/ahmed025566)
+- Twitter: [@AhmedEl18692792](https://twitter.com/AhmedEl18692792)
+- LinkedIn: [Ahmed Salah](https://www.linkedin.com/in/ahmed-salah025566/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
