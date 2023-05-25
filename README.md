@@ -45,6 +45,7 @@ REQUIRED SECTIONS:
 # 📖 Dishes.com <a name="about-project"></a>
 
 **Dishes.com** project is a web application that utilizes a meals API to fetch and display a variety of random meals. Users can explore and open individual meals to access detailed information such as category and cooking instructions video. Additionally, they can leave comments and contribute their own insights to enhance the community experience. The application also offers filtering options by country and meal type for a more personalized exploration of meals.
+ - [presntation] : https://drive.google.com/file/d/1MoL8wFqsR0VIh1Qek14H12JKQ4xC_jHM/view?usp=sharing
 
 ## 🛠 Built With <a name="built-with"></a>
 
