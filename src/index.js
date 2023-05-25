@@ -33,7 +33,7 @@ const showList = () => {
   footer.classList.remove('margin');
   footerLine.classList.remove('margin-top');
   footer.classList.remove('contact-margin');
-  footerLine.classList.remove('contact-margin-top'); 
+  footerLine.classList.remove('contact-margin-top');
 };
 
 const showSeacrch = () => {
@@ -43,7 +43,7 @@ const showSeacrch = () => {
   footer.classList.add('margin');
   footerLine.classList.add('margin-top');
   footer.classList.remove('contact-margin');
-  footerLine.classList.remove('contact-margin-top'); 
+  footerLine.classList.remove('contact-margin-top');
 };
 
 const showContact = () => {
@@ -51,10 +51,10 @@ const showContact = () => {
   searchSection.style.display = 'none';
   contactSec.style.display = 'block';
   footer.classList.add('contact-margin');
-  footerLine.classList.add('contact-margin-top'); 
+  footerLine.classList.add('contact-margin-top');
   footer.classList.remove('margin');
   footerLine.classList.remove('margin-top');
-}
+};
 
 listButton.addEventListener('click', () => {
   showList();
@@ -66,7 +66,7 @@ searchButton.addEventListener('click', () => {
 
 contactButton.addEventListener('click', () => {
   showContact();
-})
+});
 const renderLogo = () => {
   const myLogo = new Image();
   myLogo.src = logo;
