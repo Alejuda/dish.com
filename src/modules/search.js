@@ -61,7 +61,7 @@ const search = () => {
         });
       })
       .catch(() => {
-        result.innerHTML = '<h3>Invalid Input</h3>';
+        result.innerHTML = '<h3 class="item-not-found">Invalid Input</h3>';
       });
   }
 };

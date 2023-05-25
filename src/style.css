@@ -195,10 +195,10 @@ option {
   max-width: 900px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-radius: 6px;
   border: 2px solid white;
-  gap: 10px;
   padding: 50px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -215,6 +215,8 @@ option {
 
 .dish-title {
   font-size: 28px;
+  text-align: center;
+  margin: 10px;
 }
 
 .close-btn {
