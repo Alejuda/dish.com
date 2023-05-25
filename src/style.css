@@ -481,34 +481,35 @@ ul {
   gap: 0.8em 1.1em;
   padding: 1.2em 0 0 1.2em;
   color: #303040;
-  text-transform: capitalize;
+ 
 }
 
-/* h3 {
-  text-align: center;
-  margin-top: 1.8em;
-  color: #202030;
-} */
-
 .margin-top {
-  position: relative;
-  top: 300px;
+  position: absolute;
+  /* top: 650px; */
+  bottom: 40px;
 }
 
 .margin {
-  margin-top: 300px;
+  position: absolute;
+  /* top: 650px; */
+  bottom: 40px;
 }
+
 
 .display-none {
   display: none;
 }
 .contact-margin {
-  margin-top: 650px;
+  position: absolute;
+  /* top: 650px; */
+  bottom: 40px;
 }
 
 .contact-margin-top {
-  position: relative;
-  top: 650px;
+  position: absolute;
+  /* top: 650px; */
+  bottom: 90px;
 }
 
 .contact-section {
@@ -525,5 +526,9 @@ ul {
   border: 1px solid white;
   padding: 50px;
   border-radius: 10px;
-  
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
 }
