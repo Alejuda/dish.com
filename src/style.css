@@ -481,26 +481,57 @@ ul {
   gap: 0.8em 1.1em;
   padding: 1.2em 0 0 1.2em;
   color: #303040;
-  text-transform: capitalize;
 }
 
-/* h3 {
-  text-align: center;
-  margin-top: 1.8em;
-  color: #202030;
-} */
-
 .margin-top {
-  position: relative;
-  top: 267px;
+  position: absolute;
+
+  /* top: 650px; */
+  bottom: 40px;
 }
 
 .margin {
-  margin-top: 267px;
+  position: absolute;
+
+  /* top: 650px; */
+  bottom: 40px;
 }
 
-.item-not-found {
-  color: rgb(218, 98, 98);
-  text-align: center;
-  margin-top: 1.8em;
+.display-none {
+  display: none;
+}
+
+.contact-margin {
+  position: absolute;
+
+  /* top: 650px; */
+  bottom: 40px;
+}
+
+.contact-margin-top {
+  position: absolute;
+
+  /* top: 650px; */
+  bottom: 90px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  position: absolute;
+  width: 600px;
+  margin-top: 100px;
+  margin-left: calc(50% - (300px));
+  border: 1px solid white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
 }
