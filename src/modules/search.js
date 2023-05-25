@@ -4,7 +4,7 @@ const url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 const search = () => {
   let userInp = document.getElementById('user-inp').value;
   if (userInp.length === 0) {
-    result.innerHTML = '<h3>Input Field Cannot Be Empty</h3>';
+    result.innerHTML = '<h3 class="item-not-found">Input Field Cannot Be Empty</h3>';
   } else {
     fetch(url + userInp)
       .then((response) => response.json())
@@ -26,7 +26,7 @@ const search = () => {
         }
 
         result.innerHTML = `
-      <img src=${myMeal.strMealThumb}>
+      <img class="search-img" src=${myMeal.strMealThumb}>
       <div class="details">
           <h2>${myMeal.strMeal}</h2>
           <h4>${myMeal.strArea}</h4>
@@ -61,7 +61,7 @@ const search = () => {
         });
       })
       .catch(() => {
-        result.innerHTML = '<h3>Invalid Input</h3>';
+        result.innerHTML = '<h3 class="item-not-found">Invalid Input</h3>';
       });
   }
 };
