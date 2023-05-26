@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dishes</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <ul class="navBar">
+      <li class="list">List</li>
+      <li class="search">Search</li>
+      <li class="contact">Contact</li>
+    </ul>
+  </header>
+  <hr />
+  <section class="search-sec">
+    <div class="section-container">
+      <div class="search-container">
+        <input type="text" placeholder="Type A Dish Name Here.." id="user-inp" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </section>
+  <section class="list-sec">
+  <form action="">
+    <label for="Catogary">Search by:</label>
+    <select name="Catogary" id="catogary">
+      <option value="c">Catogary</option>
+      <option value="a">Area</option>
+      <option value="i">Ingredients</option>
+    </select>
+    <select name="typeOrArea" id="typeOrArea"></select>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+  <div class="pop-up-container" id="popup-window">
+    <section class="pop-up" id="pop-up">
+      <img class="dish-img" id="dish-img" alt="dish image" />
+      <img alt="CLOSE" class="close-btn" id="close-btn" />
+      <h2 class="dish-title" id="dish-title"></h2>
+      <div class="category-container">
+        <h3 class="category" id="dish-area"></h3>
+        <h3 class="category" id="dish-category"></h3>
+      </div>
+      <div class="dish-tags" id="dish-tags"></div>
+      <p class="see-recipe">
+        <i>You can see the complete recipe <a id="recipe-link">here</a>.</i>
+      </p>
+      <h3 class="popup-header">
+        Comments ( <span id="comments-number"></span> )
+      </h3>
+      <article class="comments-container" id="commits-container"></article>
+      <h3 class="popup-header">Add a comment</h3>
+      <form class="commit-form" id="post-comment-form">
+        <input type="text" class="name-input input-control" id="name" name="name" placeholder="Your name" required />
+        <textarea class="commit-input input-control" name="commit" id="commit" placeholder="Your insights"></textarea>
+        <button type="submit" class="add-comment-btn" id="comment-btn">
+          Comment
+        </button>
+      </form>
+    </section>
+  </div>
+  <p class="itemsCounter"></p>
+  <div class="displayDiv"></div>
+</section>
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-title">Get in touch with us!</h2>
+      <ul class="contact-ul">
+        <li class="contact-list-item">Ahmed Elkholy</li>
+        <ul class="contact-ul">
+          <li><a href="https://github.com/ahmed025566">Github</a></li>
+          <li>Email: ahmedsalah025566@gmail.com</li>
+        </ul>
+        <li class="contact-list-item">Ignacio Fino</li>
+        <ul class="contact-ul">
+          <li><a href="https://github.com/Alejuda">Github</a></li>
+          <li>Email: nachofino98@gamil.com</li>
+        </ul>
+      </ul>
+    </div>
+      </section>
+  <hr class="footerLine" />
+  <footer class="footer"></footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
