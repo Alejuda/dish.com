@@ -1,7 +1,10 @@
 import fetchData from './__mocks__/commentCounter.js';
 
-const commentCounter = () => {
-  const jsonData = fetchData();
+const commentCounter = (id) => {
+  const jsonData = fetchData(id);
+  if (jsonData.status === 400) {
+    return 0;
+  }
   return jsonData.length;
 };
 
