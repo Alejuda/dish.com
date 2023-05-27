@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest --env=jsdom",
     "dev": "webpack --mode development",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

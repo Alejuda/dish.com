@@ -484,17 +484,17 @@ ul {
 }
 
 .margin-top {
-  position: absolute;
+  position: relative;
 
-  /* top: 650px; */
-  bottom: 40px;
+  top: 320px;
+  
 }
 
 .margin {
-  position: absolute;
+  position: relative;
 
-  /* top: 650px; */
-  bottom: 40px;
+  top: 320px;
+
 }
 
 .display-none {
